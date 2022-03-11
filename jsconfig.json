@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "ES6", // 指定要使用的默认库
+        "module": "commonjs", // 指定模块系统（生成模块代码时）
+        "allowSyntheticDefaultImports": true, // 允许从模块进行默认导入而没有默认导出。这不影响代码生成，仅影响类型检查
+        "baseUrl": "./", // 基本目录，用于解析非相对模块名称
+        "paths": {
+            // 指定要相对于 baseUrl 选项计算的路径映射
+            "@/*": ["src/*"],
+            "@components/*": ["src/components/*"]
+        }
+    },
+    "exclude": ["node_modules", "dist"] // 告诉语言服务哪些文件不属于源代码
+}
